@@ -25,6 +25,7 @@ class Captcha{
         $length=$length ?? $this->captchaLen;
         $fontSize=$fontSize ?? $this->fontSize;
         $fontFileName=$fontFile;
+        //Check if $fontFile is URL or a file
         if (filter_var($fontFile,FILTER_VALIDATE_URL)){
             $font = file_get_contents($fontFile);
             $fontFileName="font.ttf";
@@ -34,9 +35,11 @@ class Captcha{
         imageantialias($image, true);
         imagealphablending($image,true);
         $colors = [];
+        //Color ranges
         $red = rand(125, 175);
         $green = rand(125, 175);
         $blue = rand(125, 175);
+        //Text colors
         $black = imagecolorallocate($image, 35, 35, 35);
         $white = imagecolorallocate($image, 220, 220, 220);
         $textColors = [$black, $white];
@@ -58,6 +61,7 @@ class Captcha{
         imagejpeg($image,null,100);
         imagedestroy($image);
     }
+    //Check if the *captcha* session value equal to the value entered by the user
     public static function checkCaptcha($input): bool
     {
         return strtolower($_SESSION['captcha'])==strtolower($input);
