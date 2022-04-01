@@ -12,11 +12,11 @@ According to **demo.php**, we assume you have a form in the page:
 <form class="mx-auto" method="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="Password">
             </div>
             <div class="form-group ">
                 <label for="exampleInputPassword1">Enter the Captcha</label>
@@ -25,10 +25,10 @@ According to **demo.php**, we assume you have a form in the page:
                     <img src="captcha_add.php" alt="">
                 </div>
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
     </form>
 ```
+As you see, I put an image tag with **captcha_add.php** src where the image is output.
+
+You can have something like this:
+![chart](captcha.jpeg)
