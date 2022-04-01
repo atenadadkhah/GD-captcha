@@ -1,7 +1,7 @@
 # GD-captcha
 This repository can easily make a captcha image for you and take control of checking its accuracy.
 ## Used items
-- Definitely PHP ;)  >= v7.4
+- Definitely PHP >= v7.4 ;) 
 - GD library
 ## How to use
 1. Add **Captcha.php** and **captcha_add.php** to your directory.
