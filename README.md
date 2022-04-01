@@ -42,6 +42,7 @@ You can have something like this:
 - String font size (optional)
 - String length (optional)
 - String font family (optional)
+- 
 You can set these options in **captcha_add.php** e.g.
 ```php
 $captcha=new Captcha();
