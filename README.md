@@ -31,7 +31,9 @@ According to **demo.php**, we assume you have a form in the page:
 As you see, I put an image tag with **captcha_add.php** src where the image is output.
 
 You can have something like this:
+
 ![captcha](https://user-images.githubusercontent.com/91287064/161240788-78efd47c-671d-4a9d-8ab5-0c1e203f2456.png)
+
 
 ### Personalization options
 - Image width
