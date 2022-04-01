@@ -4,5 +4,5 @@
 header("content-type:image/jpeg");
 @ob_end_clean();
 $captcha=new Captcha();
-$captcha->captchaControl(300,100,30);
+$captcha->captchaControl(200,50);
 $_SESSION['captcha']=$captcha->getCaptchaCode();
