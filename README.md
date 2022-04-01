@@ -1,5 +1,9 @@
 # GD-captcha
 This repository can easily make a captcha image for you and take control of checking its accuracy.
+## Attributes
+- Random color with each reload 
+- Random word types (letter&number, just letter , just number) depend on your luck ^_~
+- Random text color (black or white)
 ## Used items
 - Definitely PHP >= v7.4  ;) 
 - GD library
