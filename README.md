@@ -53,7 +53,7 @@ If you don't want to set a parameter leave it with *null* value and let it be th
 
 About font file that is the last parameter, you have two choices.
 1. URL (As the default value) e.g. https://fonts.gstatic.com/s/acme/v17/RrQfboBx-C5_bx0.ttf
-2. A font file in the current directory 
+2. A font file name in the current directory 
 ## Final step
 When you want to check the accuracy of the entered value you can use a static method called *checkCaptcha*. e.g.
 ```php 
