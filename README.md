@@ -5,7 +5,8 @@ This repository can easily make a captcha image for you and take control of chec
 - GD library
 ## How to use
 1. Add **Captcha.php** and **captcha_add.php** to your directory.
-2. Follow the steps below
+2. include **Captcha.php** to your main file
+3. Follow the steps below
 
 According to **demo.php**, we assume you have a form in the page:
 ```html
@@ -48,6 +49,20 @@ $captcha->captchaControl(200,50,null,5,"Sriracha-Regular.ttf");
 ```
 If you don't want to set a parameter leave it with *null* value and let it be the default one.
 
-About font file that is that last parameter, you have two choices.
+About font file that is the last parameter, you have two choices.
 1. URL (As the default value) e.g. https://fonts.gstatic.com/s/acme/v17/RrQfboBx-C5_bx0.ttf
 2. A font file in the current directory 
+## Final step
+When you want to check the accuracy of the entered value you can use a static method called *checkCaptcha*. e.g.
+```php 
+<?php
+
+if (isset($_POST['submit'])){
+    if (Captcha::checkCaptcha($_POST['captcha'])){
+        echo "Correct value";
+    }else{
+        echo "Wrong value entered!";
+    }
+}
+ ?>
+```
