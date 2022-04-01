@@ -31,4 +31,21 @@ According to **demo.php**, we assume you have a form in the page:
 As you see, I put an image tag with **captcha_add.php** src where the image is output.
 
 You can have something like this:
-![chart](captcha.jpeg)
+![captcha](https://user-images.githubusercontent.com/91287064/161240788-78efd47c-671d-4a9d-8ab5-0c1e203f2456.png)
+
+### Personalization options
+- Image width
+- Image height
+- String font size (optional)
+- String length (optional)
+- String font family (optional)
+You can set these options in **captcha_add.php** e.g.
+```php
+$captcha=new Captcha();
+$captcha->captchaControl(200,50,null,5,"Sriracha-Regular.ttf");
+```
+If you don't want to set a parameter leave it with *null* value and let it be the default one.
+
+About font file that is that last parameter, you have two choices.
+1. URL (As the default value) e.g. https://fonts.gstatic.com/s/acme/v17/RrQfboBx-C5_bx0.ttf
+2. A font file in the current directory 
