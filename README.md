@@ -6,7 +6,7 @@ This repository can easily make a captcha image for you and take control of chec
 ## How to use
 1. Add **Captcha.php** and **captcha_add.php** to your directory.
 2. include **Captcha.php** to your main file
-3. If GD library is not already allowed for you, just uncomment **;extension=php_gd2.dll** By removing **;** behind it from **php.ini**.
+3. If GD library is not already active for you, just uncomment `;extension=php_gd2.dll` By removing `;` behind it from `php.ini`.
 4. Follow the steps below
 
 According to **demo.php**, we assume you have a form in the page:
