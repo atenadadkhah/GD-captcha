@@ -32,7 +32,7 @@ According to **demo.php**, we assume you have a form in the page:
                 </div>
             </div>
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-    </form>
+</form>
 ```
 As you see, I put an image tag with **captcha_add.php** src where the image is output.
 
