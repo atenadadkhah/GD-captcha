@@ -50,7 +50,7 @@ You can have something like this:
 
 You can set these options in **captcha_add.php** e.g.
 ```php
-$captcha=new Captcha();
+$captcha = new Captcha();
 $captcha->captchaControl(200,50,null,5,"Sriracha-Regular.ttf");
 ```
 If you don't want to set a parameter leave it with *null* value and let it be the default one.
